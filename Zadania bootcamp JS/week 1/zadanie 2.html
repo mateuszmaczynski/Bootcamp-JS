@@ -1,0 +1,68 @@
+<!--
+2. Pętle
+Stwórz skrypt, który będzie wyświetlał filmy z podanego tutaj obiektu https://pastebin.com/
+kCbqehMm (oczywiście skopiuj ten kod i wstaw go do swojego skryptu zanim rozpoczniesz
+pracę).
+Skrypt powinien wyświetlać filmy z 3 kategorii (użyj do tego celu console.log()) w
+następujący sposób:
+Dla dzieci:
+Kubuś Puchatek i Przyjaciele
+Zwariowane Melodie
+Piotruś Pan
+=======================
+Dla młodzieży:
+Szkoła uczuć
+Podróż za jeden uśmiech
+Szatan z 7-ej klasy
+=======================
+Dla dorosłych:
+Gwiezdne Wojny
+Szklana Pułapka
+Titanic
+=======================
+-->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title> Zadanie 2 </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<h1> Zadanie 2 </h1>
+	
+	
+<script>
+	var movies = {
+    "Dla dzieci": [
+        "Kubuś Puchatek i Przyjaciele",
+        "Zwariowane Melodie",
+        "Piotruś Pan"
+    ],
+    "Dla młodzieży": [
+        "Szkoła uczuć",
+        "Podróż za jeden uśmiech",
+        "Szatan z 7-ej klasy"
+    ],
+    "Dla dorosłych": [
+        "Gwiezdne Wojny",
+        "Szklana Pułapka",
+        "Titanic"
+    ]
+};
+	for (var category in movies){
+		console.log(category+":");
+		for(var i=0; i<movies[category].length;i++)  
+		{
+			console.log(movies[category][i]);
+		}
+		
+		/* lub użycie funkcji forEach 
+			movies[catergory].forEach(function(elem){
+			console.log(elem);
+			}); */
+		console.log("=======================");
+	}
+</script>
+</body>
+</html>

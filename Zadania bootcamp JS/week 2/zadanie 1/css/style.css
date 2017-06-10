@@ -1,0 +1,12 @@
+div {
+    font-size: 20px;
+    color: red;
+    background: #808080;
+}
+.hidden{
+    display: none;
+}
+button{
+    font-size: 24px;
+    color: #00008b;
+}

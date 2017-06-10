@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz kontaktowy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h2>Walidator formularza</h2>
+
+<h2>Formularz kontaktowy</h2>
+
+<div class="container">
+    <form action="#" id="form" class="contact-form" novalidate>
+
+        <fieldset class="form-fieldset">
+            <label class="form-label">Adres e-mail<span class="form-label__required">*</span></label>
+            <input type="email" name="email" class="form-field">
+
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+            <label class="form-label">Imię<span class="form-label__required">*</span></label>
+            <input type="text" name="name" class="form-field">
+
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+            <label class="form-label">Wiek<span class="form-label__required">*</span></label>
+            <input type="text" name="age" class="form-field">
+
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+            <label class="form-label">Wiadomość<span class="form-label__requied">*</span></label>
+            <textarea name="message" class="form-field form-field--textarea"></textarea>
+
+        </fieldset>
+
+        <button class="button button--full" type="submit">Wyślij</button>
+
+    </form>
+
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

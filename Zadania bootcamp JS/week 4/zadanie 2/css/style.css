@@ -1,0 +1,27 @@
+body {
+background-color: #00feff;
+margin: 0px;
+}
+
+header{
+background-color: beige;
+min-height: 70px;
+
+}
+
+.menu{
+float:right;
+	
+}
+
+.menu-animation{
+display: none;
+background-color: burlywood;	
+}
+
+div{
+font-size: 20px;
+font-weight: bold;
+padding: 20px;
+}
+

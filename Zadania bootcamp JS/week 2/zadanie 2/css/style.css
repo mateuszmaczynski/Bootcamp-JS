@@ -1,0 +1,58 @@
+h2{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content:center;
+}
+.form-fieldset {
+    margin-bottom: 20px;
+    width: 600px;
+}
+.form-field--textarea {
+    width: 80%;
+    height: 170px;
+    padding-top: 15px;
+    resize: none;
+    line-height: 26px;
+}
+.form-field {
+    width: 80%;
+}
+
+.form-field--invalid,
+.invalid {
+    border: 3px #ff0000 solid;
+}
+.form-field.placeholder {
+    color: #cccccc;
+}
+
+.form-errors {
+    margin-bottom: 50px;
+    line-height: 2;
+    color: #ff9ab6;
+}
+
+.button {
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    background: green;
+    cursor: pointer;
+    font-family: "Dosis", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.button--inactive, .button:disabled {
+    background: #a4c0b4;
+}
+.button--full {
+    display: block;
+    width: 625px;
+}

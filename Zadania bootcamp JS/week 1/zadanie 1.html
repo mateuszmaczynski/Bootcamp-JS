@@ -1,0 +1,65 @@
+<!-- 
+1. Instrukcje warunkowe
+Za pomocą instrukcji warunkowej if (wraz z blokami else) lub switch, stwórz skrypt, który
+w konsoli (za pomocą console.log()) wyświetli cenę produktu, w zależności od liczby
+zakupionych przez klienta do tej pory produktów. Oczywiście wszystko to jest abstrakcyjne,
+więc musisz utworzyć zmienną, która będzie przechowywała liczbę zakupionych produktów,
+np. 100, a następnie zmienną z ceną jakiegoś fikcyjnego produktu, np. 50. Poniżej tych
+dwóch zmiennych utwórz blok instrukcji warunkowych, który ustali ostateczną cenę, w
+zależności od liczby zakupionych przez klienta produktów.
+Jeśli zatem klient ma już na koncie od 5 do 20 zakupionych produktów, to przyznaj zniżkę
+5%. Jeśli 21 do 50, to 10%, od 51 do 100 produktów daje zniżkę 15%, a powyżej 100
+produktów zniżkę w wysokości 20%.
+Musisz zatem obliczyć ostateczną cenę produktu, a następnie wyświetlić w konsoli
+komunikat, np. “Podstawowa cena produktu to 20zł, po obniżce to 17zł”. Aby to
+przetestować, będziesz musiał zmieniać liczbę zakupionych przez klienta produktów w
+zmiennej, w której taką informację zapiszesz.
+-->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title> Zadanie 1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<h1> zadanie 1</h1>
+	<label> Ilość sztuk zakupiona</label>
+	<input type="text" id="quantityPurchased" value="">
+	<div class="fieldPrice">
+	<button id="checkPrice">Sprawdź cenę</button>
+		
+	</div>
+	<script>
+	var priceBrick  = 2.50,
+		priceAfterDiscount,
+		discount,
+		quantity = document.getElementById("quantityPurchased"),
+		checkPrice= document.getElementById("checkPrice");
+		checkPrice.addEventListener('click',function(){
+			var quantityPurchased = parseInt(quantity.value);			
+					if(quantityPurchased>=5){
+						if (quantityPurchased>=5 && quantityPurchased<=20){
+							discount=0.05;
+						}
+						else if (quantityPurchased>=21 && quantityPurchased<=50){
+							discount=0.1;		
+						}
+						else if (quantityPurchased>=51 && quantityPurchased<=100){
+							discount=0.15;	
+						}
+						else if (quantityPurchased>100){
+							discount=0.2;	
+						}
+						priceAfterDiscount=(priceBrick*(1-discount)).toFixed(2);
+						console.log("Kupiłeś już u nas: "+quantityPurchased+" sztuk i dostajesz u nas rabat "+discount*100+"% i twoja cena to "+priceAfterDiscount+"zł");
+					}
+					else if (quantityPurchased>0 && quantityPurchased <5){
+						console.log("Za mało kupiłeś żeby dostać rabat");
+					}	
+					})	
+	</script>
+
+</body>
+</html>

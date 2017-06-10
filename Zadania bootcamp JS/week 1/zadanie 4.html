@@ -1,0 +1,31 @@
+<!--
+4. Funkcja sumująca przekazane liczby
+Stwórz funkcję o nazwie sum, która będzie przyjmowała jeden parametr, którym będzie
+tablica z liczbami. Funkcja ta powinna zsumować wszystkie liczby z przekazanej tablicy, a
+następnie zwrócić wynik takiej operacji.
+Przykładowe jej użycie powinno wyglądać tak:
+sum([1, 10, 5, 4]); // zwraca wartość 20
+-->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title> Zadanie 4</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1>Zadanie 4</h1>
+<script>
+var numbers = [10,55,2,3]
+function sum(numbers){
+	var result=0;
+	for (var i=0; i< numbers.length;i++){
+	result += numbers[i];	
+	}	
+	console.log("suma wynosi:"+result);
+};
+sum([1,2,5,6]);
+sum(numbers);	
+</script>
+</body>
+</html>

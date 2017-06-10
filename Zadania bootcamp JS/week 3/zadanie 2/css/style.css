@@ -1,0 +1,30 @@
+.containter{
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+h1{
+    background-color: #0000fa;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#section{
+    background-color: #ff9ab6;
+    line-height: 2.0;
+    margin-bottom: 30px;
+}
+
+#button{
+    background-color: #ffe4c4;
+    padding: 10px;
+}
+
+#button:hover{
+    background-color: #deb877;
+}
+
+.hidden {
+    display: none;
+}
