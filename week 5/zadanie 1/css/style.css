@@ -1,0 +1,21 @@
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+h1{
+    background-color: #ffc4b4;
+}
+button{
+    padding: 10px;
+    background-color: #00aaaa;
+    cursor: pointer;
+}
+
+#output {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff8c8;
+    font: 14px 'Courier New', monospace;
+}
